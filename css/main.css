@@ -1447,6 +1447,11 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 478px) {
+  .modal {
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
