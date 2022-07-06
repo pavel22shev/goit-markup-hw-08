@@ -1,6 +1,9 @@
 .customers {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .customers__title {
@@ -13,15 +16,19 @@
 
 .customers__list {
   display: flex;
-  gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   background-color: var(--primary-white-color);
   border: 1px solid #afb1b8;
@@ -33,5 +40,10 @@
   &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 90px;
   }
 }

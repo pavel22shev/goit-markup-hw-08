@@ -30,39 +30,31 @@
         <a lang="en" href="./index.html" class="logo header__logo"
           ><span class="logo-color">Web</span>Studio</a
         >
-        <nav>
+        <nav class="header__nav">
           <ul class="list nav">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link no-decor"
-                >Студия
+              <a href="./index.html" class="nav__link no-decor">Студия
                 <div class="nav__line"></div>
               </a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current-page no-decor"
-                >Портфолио
+              <a href="./portfolio.html" class="nav__link no-decor nav__link--current-page">Портфолио
                 <div class="nav__line nav__line--current-page"></div>
               </a>
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link no-decor"
-                >Контакты
-                <div class="nav__line"></div>
-              </a>
-            </li>
+            <li class="nav__item"><a href="" class="nav__link no-decor">Контакты
+              <div class="nav__line"></div>
+            </a></li>
           </ul>
         </nav>
         <ul class="contacts list">
           <li class="contacts__item">
             <a href="mail:info@devstudio.com" class="contacts__link no-decor">
-              <svg width="16" height="12"><use href="./images/icons.svg#mail"></use></svg>info@devstudio.com</a
-            >
+              <svg class="contacts__icon" width="16" height="12"><use href="./images/icons.svg#mail"></use></svg>info@devstudio.com</a>
           </li>
           <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__link no-decor">
-              <svg width="10" height="16"><use href="./images/icons.svg#smartphone"></use></svg>+38
-              096 111 11 11</a
-            >
+              <svg class="contacts__icon" width="10" height="16"><use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -84,13 +76,44 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio1.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-1-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-1-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-1-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-1-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-1-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-1-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-1-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-1-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-1-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-1-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-1-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-1-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-1-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-1-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-1-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-1-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-1-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-1-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-1-mobile@1x.jpg"
+                        alt="laptop with website" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -106,13 +129,44 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio2.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-2-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-2-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-2-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-2-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-2-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-2-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-2-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-2-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-2-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-2-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-2-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-2-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-2-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-2-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-2-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-2-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-2-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-2-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-2-mobile@1x.jpg"
+                        alt="Two men with a basketball" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -128,13 +182,44 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio3.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-3-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-3-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-3-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-3-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-3-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-3-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-3-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-3-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-3-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-3-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-3-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-3-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-3-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-3-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-3-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-3-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-3-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-3-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-3-mobile@1x.jpg"
+                        alt="Restaurant logo" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -150,13 +235,44 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio4.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-4-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-4-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-4-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-4-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-4-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-4-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-4-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-4-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-4-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-4-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-4-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-4-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-4-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-4-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-4-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-4-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-4-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-4-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-4-mobile@1x.jpg"
+                        alt="Headphones" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -172,13 +288,43 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio5.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-5-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-5-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-5-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-5-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-5-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-5-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-5-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-5-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-5-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-5-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-5-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-5-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-5-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-5-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-5-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-5-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-5-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-5-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-5-mobile@1x.jpg" alt="Two boxes" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -194,13 +340,45 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio6.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-6-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-6-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-6-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-6-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-6-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-6-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-6-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-6-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-6-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-6-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-6-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-6-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-6-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-6-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-6-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-6-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-6-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-6-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-6-mobile@1x.jpg"
+                        alt="Website monitor" />
+                </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -216,13 +394,44 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio7.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-7-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-7-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-7-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-7-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-7-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-7-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-7-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-7-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-7-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-7-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-7-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-7-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-7-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-7-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-7-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-7-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-7-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-7-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-7-mobile@1x.jpg"
+                        alt="Opened book" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -238,13 +447,43 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio8.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-8-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-8-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-8-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-8-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-8-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-8-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-8-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-8-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-8-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-8-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-8-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-8-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-8-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-8-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-8-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-8-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-8-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-8-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-8-mobile@1x.jpg" alt="Logo tag" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -260,13 +499,44 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link no-decor"
                 ><div class="portfolio__overlay--display">
-                  <img
-                    src="./images/portfolio/portfolio9.jpg"
-                    alt="portfolio1"
-                    width="370"
-                    height="294"
-                    class="portgolio__img"
-                  />
+                  <picture>
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-9-desktop@1x.webp 1x,
+        ./images/examples/desktop/portfolio-card-9-desktop@2x.webp 2x,
+        ./images/examples/desktop/portfolio-card-9-desktop@3x.webp 3x
+      " media="(min-width: 1200px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/desktop/portfolio-card-9-desktop@1x.jpg 1x,
+        ./images/examples/desktop/portfolio-card-9-desktop@2x.jpg 2x,
+        ./images/examples/desktop/portfolio-card-9-desktop@3x.jpg 3x
+      " media="(min-width: 1200px)" />
+
+                    <source srcset="
+        ./images/examples/table/portfolio-card-9-table@1x.webp 1x,
+        ./images/examples/table/portfolio-card-9-table@2x.webp 2x,
+        ./images/examples/table/portfolio-card-9-table@3x.webp 3x
+      " media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/table/portfolio-card-9-table@1x.jpg 1x,
+        ./images/examples/table/portfolio-card-9-table@2x.jpg 2x,
+        ./images/examples/table/portfolio-card-9-table@3x.jpg 3x
+      " media="(min-width: 768px)" />
+
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-9-mobile@1x.webp 1x,
+        ./images/examples/mobile/portfolio-card-9-mobile@2x.webp 2x,
+        ./images/examples/mobile/portfolio-card-9-mobile@3x.webp 3x
+      " media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="
+        ./images/examples/mobile/portfolio-card-9-mobile@1x.jpg 1x,
+        ./images/examples/mobile/portfolio-card-9-mobile@2x.jpg 2x,
+        ./images/examples/mobile/portfolio-card-9-mobile@3x.jpg 3x
+      " media="(max-width: 767px)" />
+
+                    <img class="img examples__img"
+                        src="./images/examples/mobile/portfolio-card-9-mobile@1x.jpg"
+                        alt="Laptop with application" />
+                </picture>
                   <div class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -287,67 +557,48 @@
 
     <footer class="footer">
       <div class="container footer__container">
+        <div class="footer__box">
         <div class="footer__contacts">
-          <a lang="en" href="./index.html" class="logo footer__logo--mg"
-            ><span class="logo-color">Web</span><span class="footer__logo--color">Studio</span></a
-          >
-          <address>
-            <ul class="list">
-              <li class="footer__list">
-                <a
-                  href="https://goo.gl/maps/fyhnr9jKTHNJ7W2t6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="footer__address"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="footer__list">
-                <a href="mail:info@devstudio.com" class="footer__item">info@devstudio.com</a>
-              </li>
-              <li class="footer__list">
-                <a href="tel:+380961111111" class="footer__item">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+        <a lang="en" href="./index.html" class="logo footer__logo--mg"
+          ><span class="logo-color">Web</span><span class="footer__logo--color">Studio</span></a
+        >
+        <address>
+          <ul class="list">
+            <li class="footer__list">
+              <a
+                href="https://goo.gl/maps/fyhnr9jKTHNJ7W2t6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__address"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer__list">
+              <a href="mail:info@devstudio.com" class="footer__item">info@devstudio.com</a>
+            </li>
+            <li class="footer__list">
+              <a href="tel:+380961111111" class="footer__item">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
         </div>
         <div class="footer-socials">
           <h2 class="footer-sosials__title">присоединяйтесь</h2>
           <ul class="list footer-sosials__list">
-            <li class="footer-sosials__item">
-              <a href="" class="footer-sosial__icon" aria-label="instagram"
-                ><svg width="20" height="20"><use href="./images/icons.svg#instagram"></use></svg></a>
-            </li>
-            <li class="footer-sosials__item">
-              <a href="" class="footer-sosial__icon" aria-label="twitter"
-                ><svg width="20" height="20"><use href="./images/icons.svg#twitter"></use></svg></a>
-            </li>
-            <li class="footer-sosials__item">
-              <a href="" class="footer-sosial__icon" aria-label="facebook"
-                ><svg width="20" height="20"><use href="./images/icons.svg#facebook"></use></svg></a>
-            </li>
-            <li class="footer-sosials__item">
-              <a href="" class="footer-sosial__icon" aria-label="linkedin"
-                ><svg width="20" height="20"><use href="./images/icons.svg#linkedin"></use></svg></a>
-            </li>
+            <li class="footer-sosials__item"><a href="" class="footer-sosial__icon" aria-label="instagram"><svg width="20" height="20"><use href="./images/icons.svg#instagram"></use></svg></a></li>
+            <li class="footer-sosials__item"><a href="" class="footer-sosial__icon" aria-label="twitter"><svg width="20" height="20"><use href="./images/icons.svg#twitter"></use></svg></a></li>
+            <li class="footer-sosials__item"><a href="" class="footer-sosial__icon" aria-label="facebook"><svg width="20" height="20"><use href="./images/icons.svg#facebook"></use></svg></a></li>
+            <li class="footer-sosials__item"><a href="" class="footer-sosial__icon" aria-label="linkedin"><svg width="20" height="20"><use href="./images/icons.svg#linkedin"></use></svg></a></li>
           </ul>
         </div>
-
+        
+      </div>
         <form class="footer-sub">
+          <h2 class="footer-sub__title">Подпишитесь на разсылку</h2> 
           <label class="footer-sub__label">
-            <span class="footer-sub__title">Подпишитесь на разсылку</span>
-            <input
-              type="email"
-              name="mail-input"
-              placeholder="E-mail"
-              class="footer-sub__input"
-              required
-            />
+            <input type="email" name="mail-input" placeholder="E-mail" class="footer-sub__input" required/>
+            <button type="submit" class="footer-sub__btn pointer"><span class="footer-sub__bt--txt-mg">Подписаться</span><svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg></button>
           </label>
-          <button type="submit" class="footer-sub__btn pointer">
-            <span class="footer-sub__bt--txt-mg">Подписаться</span
-            ><svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
-          </button>
         </form>
       </div>
     </footer>

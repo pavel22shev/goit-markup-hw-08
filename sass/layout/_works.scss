@@ -1,6 +1,12 @@
 .works {
-  padding-top: 47px;
-  padding-bottom: 94px;
+
+  display: none;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 47px;
+      padding-bottom: 94px;
+    }
+  
 }
 
 .works__title {
